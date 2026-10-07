@@ -5,7 +5,7 @@ public class PosterManager {
     private Movie[] movies = new Movie[0];
     private int limit;
 
-    public PosterManager() { // Первый конструктор
+    public PosterManager() {
         this.limit = 5;
     }
 
@@ -23,12 +23,12 @@ public class PosterManager {
         movies = tmp;
     }
 
-    public Movie[] findAll() {          // Возвращение фильмов в том порядке в котором добавлялись
+    public Movie[] findAll() {
         return movies;
     }
 
     public Movie[] findLast() {
-        int resultLength;       //movies.length = 7 , limit = 5, resultLength = 5
+        int resultLength;
 
         if (movies.length < limit) {
             resultLength = movies.length;
